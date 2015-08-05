@@ -1,0 +1,26 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/Users/ssaturn/github/trunk/c++14/AsyncJob/AsyncJob.h
+concurrent_queue.h
+-
+functional
+-
+
+/Users/ssaturn/github/trunk/c++14/AsyncJob/main.cpp
+iostream
+-
+vector
+-
+thread
+-
+atomic
+-
+AsyncJob.h
+/Users/ssaturn/github/trunk/c++14/AsyncJob/AsyncJob.h
+
