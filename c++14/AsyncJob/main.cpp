@@ -5,8 +5,8 @@
 #include "AsyncJob.h"
 
 sst::AsyncJob* g_asyncJob = nullptr;
-std::atomic<bool> g_stop = false;
-std::atomic<int> g_count = 0;
+std::atomic<bool> g_stop(false);
+std::atomic<int> g_count(0);
 
 
 void Init()
@@ -79,6 +79,6 @@ int main()
 
     for ( auto& worker : workers )
     {
-        worker.detech();
+        //worker.detech();
     }
 }
