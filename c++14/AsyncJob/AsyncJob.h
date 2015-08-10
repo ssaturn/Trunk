@@ -1,8 +1,6 @@
 #pragma once
 
-
 #include <functional>
-
 #include <concurrent_queue.h>
 #include <mutex>
 #include <boost/lockfree/queue.hpp>
