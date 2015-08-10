@@ -1,7 +1,9 @@
 #pragma once
 
 #include <functional>
+#ifdef _WINDOWS
 #include <concurrent_queue.h>
+#endif
 #include <mutex>
 #include <boost/lockfree/queue.hpp>
 #include <boost/function.hpp>

@@ -1,7 +1,7 @@
 // AsyncJob.cpp : Defines the entry point for the console application.
 //
 
-#include "stdafx.h"
+//#include "stdafx.h"
 
 #include <iostream>
 #include <vector>
@@ -73,13 +73,13 @@ int main()
 		std::this_thread::sleep_for(std::chrono::milliseconds(100));
 
 		auto function = []() { 
-			if (g_count == 30)
-				{
-					g_stop = true;
-					return;
-				}
+			if (g_count >= 30)
+			{
+				g_stop = true;
+				return;
+			}
 			std::lock_guard<std::mutex> lock(g_lock);
-				std::cout << std::this_thread::get_id() << " : " << g_count++ << std::endl; };
+			std::cout << std::this_thread::get_id() << " : " << g_count++ << std::endl; };
 
 #ifdef _WINDOWS
 		g_asyncJob->Push(function);

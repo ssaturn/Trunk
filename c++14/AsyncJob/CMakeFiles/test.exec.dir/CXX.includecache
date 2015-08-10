@@ -9,6 +9,10 @@
 /Users/ssaturn/github/trunk/c++14/AsyncJob/AsyncJob.h
 functional
 -
+concurrent_queue.h
+-
+mutex
+-
 boost/lockfree/queue.hpp
 -
 boost/function.hpp
@@ -22,6 +26,8 @@ vector
 thread
 -
 atomic
+-
+boost/function.hpp
 -
 AsyncJob.h
 /Users/ssaturn/github/trunk/c++14/AsyncJob/AsyncJob.h
